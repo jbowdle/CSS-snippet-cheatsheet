@@ -98,5 +98,6 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    margin: 40px 0px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
