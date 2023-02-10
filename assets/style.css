@@ -6,6 +6,7 @@
     --accent-text: rgb(38, 27, 27);
     --select-bg: rgb(255, 0, 0);
     --select-text: green;
+    --glow: rgb(255, 0, 0);
 }
 
 ::selection {
@@ -28,6 +29,7 @@ pre {
 }
 
 .snippet-box {
+    flex: 0 0 250px; 
     border: 2px dashed var(--text-color);
     background-color: var(--main-color);
     padding: 5px;
@@ -42,6 +44,17 @@ pre {
     position: relative;
     top: -15%;
     text-align: center;
+}
+
+.snippet-box .title {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.snippet-box:hover,
+.snippet-box:hover .title {
+    box-shadow: inset 0px 0px 8px var(--glow),
+    0 0 15px var(--glow);
 }
 
 .code-snippet {

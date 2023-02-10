@@ -13,43 +13,70 @@
                 <p>Select any snippet below to select all the code to copy.</p>
             </header>
             <section id="code-container">
-                <!--Use articles for code snippet sections-->
                 <article class="snippet-box">
-                    <h2 class="title">example css code</h2>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2 class="title">Flexbox Row</h2>
+                    <p class="description">Use these three properties to create a Flexbox row layout.</p>
                     <pre class="code-snippet"><code>
-Lorem ipsum 
-    dolor sit amet, 
-    consectetur adipiscing elit, 
-    sed do eiusmod tempor 
-    incididunt ut labore 
-    et dolore magna aliqua.</code></pre>
-                </article>
-                <!--update these boxes w/ finished format-->
-                <article class="snippet-box">
-                    <h2>title</h2>
-                    <p>descr</p>
-                    <p>code snippet</p>
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}</code></pre>
                 </article>
                 <article class="snippet-box">
-                    <h2>title</h2>
-                    <p>descr</p>
-                    <p>code snippet</p>
+                    <h2 class="title">Flexbow Column</h2>
+                    <p class="description">Use this to create a Flexbox column layout.</p>
+                    <pre class="code-snippet"><code>
+.column {
+    display: flex;
+    flex-direction: column;
+}</code></pre>
                 </article>
                 <article class="snippet-box">
-                    <h2>title</h2>
-                    <p>descr</p>
-                    <p>code snippet</p>
+                    <h2 class="title">CSS Grid Layout</h2>
+                    <p class="description">Build a 12-column layout using CSS Grid.</p>
+                    <pre class="code-snippet"><code>
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}</code></pre>
                 </article>
                 <article class="snippet-box">
-                    <h2>title</h2>
-                    <p>descr</p>
-                    <p>code snippet</p>
+                    <h2 class="title">Linear Gradients</h2>
+                    <p class="description">This will create a background linear gradient from top to bottom.</p>
+                    <pre class="code-snippet"><code>
+.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}</code></pre>
                 </article>
                 <article class="snippet-box">
-                    <h2>title</h2>
-                    <p>descr</p>
-                    <p>code snippet</p>
+                    <h2 class="title">Box Transition Glow</h2>
+                    <p class="description">Use transition and box shadows to glow on hover.</p>
+                    <pre class="code-snippet"><code>
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+}</code></pre>
+                </article>
+                <article class="snippet-box">
+                    <h2 class="title">Overlay Card with Title</h2>
+                    <p class="description">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                    <pre class="code-snippet"><code>
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}</code></pre>
                 </article>
             </section>
             <footer>
